@@ -1,0 +1,73 @@
+1. What are the four access modifiers available in Java and what is their significance in terms of class, method, and variable accessibility?
+ 
+Public:
+When class, method, or variable is marked as public, it is accessible from any other class. 
+
+Protected:
+When class, method, or variable is marked as protected, it is accessible within the same package or by subclasses of the class in which it's declared. 
+
+Default: 
+If no access modifier is specified, the member is considered to have default access.
+
+Private: 
+When a class, method, or variable is marked as private, it is accessible only within the same class. It cannot be accessed by any other class, not even subclasses.
+
+
+Class:
+Public classes can be accessed from anywhere.
+Default classes can only be accessed within the same package.
+Private classes are not allowed in Java.
+Protected classes are also not allowed in Java.
+
+Method:
+Public methods can be accessed from anywhere.
+Protected methods can be accessed within the same package and by subclasses, regardless of the package.
+Default methods can only be accessed within the same package.
+Private methods can only be accessed within the same class.
+
+Variable:
+Public variables can be accessed from anywhere.
+Protected variables can be accessed within the same package and by subclasses, regardless of the package.
+Default variables can only be accessed within the same package.
+Private variables can only be accessed within the same class.
+
+
+2. What is the difference between Exception and error?
+
+Exceptions:
+Exceptions in Java represent conditions that typically can be handled by the application.
+They occur during the normal flow of the program and are often caused by external factors such as invalid user input, file I/O errors, network issues, etc.
+Recoverable errors -> Checked Exception & UnChecked Exception.
+Checked Exception - Should be caught, Should be declared 
+
+Errors:
+Errors often indicate problems that cannot be recovered from, and attempting to catch them might lead to unpredictable behavior.
+Syntax errors, Runtime errors, Logical errors
+
+
+3. What is the difference between checked Exception and unchecked Exception?
+
+Checked Exceptions:
+Compilation Requirement: 
+Checked exceptions are checked at compile-time by the Java compiler.
+
+Handling Requirement: 
+Checked exceptions must be handled by either catching them using a try-catch block or declaring them to be thrown in the method signature using the throws keyword.
+
+Unchecked Exceptions:
+Compilation Requirement: 
+Unchecked exceptions are not checked at compile-time. The compiler does not force the programmer to handle or declare unchecked exceptions.
+
+Handling Requirement: 
+While it's not mandatory to handle or declare unchecked exceptions, they can still be caught using a try-catch block if desired.
+
+
+
+
+
+
+
+
+
+
+

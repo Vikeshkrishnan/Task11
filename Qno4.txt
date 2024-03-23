@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class DivisionProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.println("Enter the first integer: ");
+            int numerator = scanner.nextInt();
+
+            System.out.println("Enter the second integer: ");
+            int denominator = scanner.nextInt();
+
+            int result = divide(numerator, denominator);
+            System.out.println("Result of division: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Cannot divide by zero. Please enter a non-zero value for the denominator.");
+        } catch (java.util.NoSuchElementException e) {
+            System.out.println("Error: Input stream closed unexpectedly. Please provide valid input.");
+        }
+
+        scanner.close();
+    }
+
+    public static int divide(int numerator, int denominator) {
+        return numerator / denominator;
+    }
+}

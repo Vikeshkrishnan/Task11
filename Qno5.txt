@@ -1,0 +1,35 @@
+ArrayIndexOutOfBoundsException
+    
+public class ArrayIndexOutOfBoundsExceptionExample {
+        public static void main(String[] args) {
+            int[] numbers = {1, 2, 3, 4, 5};
+    
+            try {
+                // Trying to access an element beyond the array's bounds
+                int value = numbers[5];  // This will throw ArrayIndexOutOfBoundsException
+                System.out.println("Value: " + value);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Error: Array index is out of bounds.");
+            }
+        }
+    }
+
+
+StringIndexOutOfBoundsException
+
+public class StringIndexOutOfBoundsExceptionExample {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+
+        try {
+            // Trying to access a character beyond the string's length
+            char ch = str.charAt(15);  // This will throw StringIndexOutOfBoundsException
+            System.out.println("Character: " + ch);
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("Error: String index is out of bounds.");
+        }
+    }
+}
+
+
+
